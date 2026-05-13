@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activities</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Personal Website</h1>
+  </header>
+
+  <nav>
+  <div class="nav-left">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="profile.html">Profile</a>
+    <a href="contact.html">Contact</a>
+    <a href="activities.html">Activities</a>
+  </div>
+
+  <div class="nav-right">
+    <div class="dropdown">
+      <button class="dropbtn">Menu ▼</button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+        <a href="activities.html">Activities</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <main>
+    <div class="card">
+      <h2>My Activities</h2>
+      <p>Add your activity and upload a photo.</p>
+
+      <label>Activity Title:</label>
+      <input type="text" id="activityTitle" placeholder="Example: Basketball Training">
+
+      <label>Description:</label>
+      <textarea type="text" id="description" row="20" placeholder="Description of the activity"></textarea>
+      
+      <label>Upload Photo:</label>
+      <input type="file" id="activityImage" accept="image/*">
+
+      <button onclick="saveActivity()">Save Activity</button>
+
+      <hr>
+
+      <h3>Saved Activities</h3>
+      <div id="activityList"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 My Website | Created by Me</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
